@@ -1,0 +1,64 @@
+{
+  "name": "@founderpath/financets",
+  "version": "1.0.0",
+  "description": "Finance.ts is a library for financial calculations",
+  "type": "module",
+  "exports": {
+    "require": "./cjs/index.js",
+    "import": "./esm/index.js"
+  },
+  "main": "cjs/index.js",
+  "homepage": "https://github.com/founderpath/finance.ts#readme",
+  "bugs": {
+    "url": "https://github.com/founderpath/finance.ts/issues"
+  },
+  "keywords": [
+    "finance",
+    "javascript",
+    "typescript",
+    "financejs",
+    "finance.js",
+    "financets",
+    "finance.ts"
+  ],
+  "author": "Makara Sok (https://maktouch.com)",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf cjs/ esm/",
+    "build": "yarn clean && yarn build:cjs && yarn build:esm",
+    "build:cjs": "tsc --module commonjs --outDir cjs/ && echo '{\"type\": \"commonjs\"}' > cjs/package.json",
+    "build:esm": "tsc --module es2022 --outDir esm/ && echo '{\"type\": \"module\"}' > esm/package.json",
+    "test": "esno --test ./src/*.test.ts",
+    "tsc": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/founderpath/finance.ts.git"
+  },
+  "dependencies": {},
+  "peerDependencies": {},
+  "devDependencies": {
+    "@types/node": "^20.4.4",
+    "@typescript-eslint/eslint-plugin": "^5.9.0",
+    "@typescript-eslint/parser": "^5.9.0",
+    "eslint": "^8.6.0",
+    "esno": "^0.17.0",
+    "rimraf": "^5.0.1",
+    "typescript": "^4.1.5"
+  },
+  "engines": {
+    "node": ">=14.4"
+  },
+  "volta": {
+    "node": "20.4.0",
+    "yarn": "1.18.0"
+  },
+  "files": [
+    "package.json",
+    "README.md",
+    "esm",
+    "cjs",
+    "LICENSE",
+    "src"
+  ]
+}
