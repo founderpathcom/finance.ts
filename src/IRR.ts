@@ -6,7 +6,7 @@
  * @param cashFlow
  * @returns
  */
-export function IRR(depth: number, cashFlow: number[]) {
+export function IRR(cashFlow: number[], depth: number = 10000) {
   let numberOfTries = 1;
   // Cash flow values must contain at least one positive value and one negative value
   let positive, negative;
