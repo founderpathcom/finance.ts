@@ -14,6 +14,5 @@ export { PP } from "./PP";
 export { PV } from "./PV";
 export { R72 } from "./R72";
 export { ROI } from "./ROI";
-export { stockPV } from "./stockPV";
 export { WACC } from "./WACC";
 export { XIRR } from "./XIRR";
