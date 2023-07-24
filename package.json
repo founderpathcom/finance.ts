@@ -8,9 +8,9 @@
     "import": "./esm/index.js"
   },
   "main": "cjs/index.js",
-  "homepage": "https://github.com/founderpath/finance.ts#readme",
+  "homepage": "https://github.com/founderpathcom/finance.ts",
   "bugs": {
-    "url": "https://github.com/founderpath/finance.ts/issues"
+    "url": "https://github.com/founderpathcom/finance.ts/issues"
   },
   "keywords": [
     "finance",
@@ -33,7 +33,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/founderpath/finance.ts.git"
+    "url": "git+https://github.com/founderpathcom/finance.ts.git"
   },
   "dependencies": {},
   "peerDependencies": {},
