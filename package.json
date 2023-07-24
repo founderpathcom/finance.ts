@@ -1,11 +1,15 @@
 {
   "name": "@founderpath/financets",
-  "version": "1.1.1",
+  "version": "1.2.1",
   "description": "Finance.ts is a library for financial calculations",
   "type": "module",
   "exports": {
-    "require": "./cjs/index.js",
-    "import": "./esm/index.js"
+    ".": {
+      "types": "./types/index.d.ts",
+      "require": "./cjs/index.js",
+      "import": "./esm/index.js",
+      "default": "./esm/index.js"
+    }
   },
   "main": "cjs/index.js",
   "homepage": "https://github.com/founderpathcom/finance.ts",
@@ -24,10 +28,11 @@
   "author": "Makara Sok (https://maktouch.com)",
   "license": "MIT",
   "scripts": {
-    "clean": "rimraf cjs/ esm/",
-    "build": "yarn clean && yarn build:cjs && yarn build:esm",
-    "build:cjs": "tsc --module commonjs --outDir cjs/ && echo '{\"type\": \"commonjs\"}' > cjs/package.json",
-    "build:esm": "tsc --module es2022 --outDir esm/ && echo '{\"type\": \"module\"}' > esm/package.json",
+    "clean": "rimraf cjs/ esm/ types/",
+    "build": "yarn clean && yarn build:tsc && yarn build:cjs && yarn build:esm",
+    "build:tsc": "tsc -b ./tsconfig.cjs.json ./tsconfig.esm.json ./tsconfig.types.json",
+    "build:cjs": "echo '{\"type\": \"commonjs\"}' > cjs/package.json",
+    "build:esm": "echo '{\"type\": \"module\"}' > esm/package.json",
     "test": "esno --test ./src/*.test.ts",
     "tsc": "tsc"
   },
