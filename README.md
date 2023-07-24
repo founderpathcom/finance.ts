@@ -91,3 +91,9 @@ Rule of 72 (R72) is a rule stating that in order to find the number of years req
 
 ### `ROI` Return on Investment
 Return on Investment (ROI) is a simple calculation that tells you the bottom line return of any investment.
+
+### `WACC` Weighted Average Cost of Capital
+Weighted Average Cost of Capital (WACC) is the rate that a company is expected to pay on average to all its security holders to finance its assets.
+
+### `XIRR` Irregular Internal Rate of Return
+XIRR is used to determine the Internal Rate of Return when the cash flows are at Irregular intervals.
