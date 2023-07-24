@@ -7,7 +7,7 @@
  * @param cashFlows
  * @returns
  */
-export function NPV(rate: number, ...cashFlows: number[]) {
+export function NPV(rate: number, cashFlows: number[]) {
   let npv = cashFlows[0];
 
   for (let i = 1; i < cashFlows.length; i++) {

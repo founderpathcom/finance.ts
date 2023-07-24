@@ -1,5 +1,5 @@
 /**
- * The Discount Factor (DF) is the factor by which a future cash flow must be multiplied in order to obtain the present value.
+ * Discount Factor (DF) is the factor by which a future cash flow must be multiplied in order to obtain the present value.
  *
  * @see http://en.wikipedia.org/wiki/Discounting#Discount_factor
  * @param rate
